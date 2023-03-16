@@ -33,6 +33,9 @@ const getWeather = () => {
 			// console.log(res.data.weather[0]);
 			weather.textContent = status.main;
 
+			warning.textContent = "";
+			input.value = "";
+
 			if (status.id >= 200 && status.id < 300) {
 				photo.src = "img/thunderstorm.png";
 			} else if (status.id < 400) {
