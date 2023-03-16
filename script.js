@@ -25,6 +25,8 @@ const getWeather = () => {
 			const status = Object.assign({}, ...res.data.weather);
 			const pict = status.id;
 
+			// console.log(status.id);
+
 			cityName.textContent = res.data.name;
 
 			temperature.textContent = `${Math.floor(temp)} °C`;
@@ -55,5 +57,12 @@ const getWeather = () => {
 		.catch(() => (warning.textContent = "Wpisz popraną nazwę miasta"));
 };
 
-// getWeather();
+const enterCheck = (e) => {
+	if (e.key === "Enter") {
+		getWeather();
+	}
+};
+
+input.addEventListener("keyup", enterCheck);
 button.addEventListener("click", getWeather);
+getWeather();
