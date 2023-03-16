@@ -54,7 +54,7 @@ const getWeather = () => {
 				photo.src = "img/unknown.png";
 			}
 		})
-		.catch(() => (warning.textContent = "Wpisz popraną nazwę miasta"));
+		.catch(() => (warning.textContent = "Text the name of the city"));
 };
 
 const enterCheck = (e) => {
