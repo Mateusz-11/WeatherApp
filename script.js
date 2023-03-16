@@ -11,9 +11,6 @@ const humidity = document.querySelector(".humidity");
 
 // https://api.openweathermap.org/data/2.5/weather?q={city name}&appid={API key}
 
-console.log("Test");
-console.log(API_KEY_0);
-
 const API_LINK = "https://api.openweathermap.org/data/2.5/weather?q=";
 const API_KEY = API_KEY_0;
 const API_UNITS = "&units=metric";
