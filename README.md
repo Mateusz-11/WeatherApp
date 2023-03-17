@@ -4,6 +4,8 @@
 
 The project "Weather App" it's a web application for people who want check currently weather in choose cities.
 
+It's a project from JS course.
+
 ## 🛠 Technology
 
 - JavaScript
