@@ -1,4 +1,4 @@
-import API_KEY_0 from "/keys.js";
+import { API_KEY_0 } from "./keys.js";
 
 const input = document.querySelector("input");
 const button = document.querySelector("button");
